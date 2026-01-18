@@ -3,17 +3,29 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
-  "repository": {
+  "scripts": {
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"    
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",    
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1"    
+  },
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/Alex-EDG/ajs.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Alex-EDG/ajs/issues"
   },
